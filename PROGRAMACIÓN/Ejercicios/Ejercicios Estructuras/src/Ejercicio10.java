@@ -29,6 +29,7 @@ public class Ejercicio10 {
         centenas = ((numeroUsuario%10000)%1000)/100;
         decenas = ((numeroUsuario%10000)%1000)%100/10;
         unidades = ((numeroUsuario%10000)%1000)%100%10;
+        String ade= "hola";
         lector.close();
     }
 }
