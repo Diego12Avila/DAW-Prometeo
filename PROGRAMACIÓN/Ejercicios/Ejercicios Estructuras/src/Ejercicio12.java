@@ -24,7 +24,6 @@ public class Ejercicio12 {
         System.out.println("comparar iguales "+compararIguales);
         System.out.println("comparar longitud "+compararLong);
         System.out.println("comparar distintas "+!compararIguales);
-        
     }
 
 }
