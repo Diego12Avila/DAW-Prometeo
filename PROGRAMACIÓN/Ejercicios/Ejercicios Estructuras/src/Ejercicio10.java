@@ -24,11 +24,19 @@ public class Ejercicio10 {
         System.out.println(""+dmillar+umillar+centenas+decenas+unidades); // asi lo concatena
         System.out.println("ahora indica un numero completo");
         int numeroUsuario = lector.nextInt(); // 56789
+        lector.close();
+        System.out.println("cuantos numeros hay "+String.valueOf(numeroUsuario).length());
         dmillar = numeroUsuario/10000 ;
         umillar = (numeroUsuario%10000)/1000;
         centenas = ((numeroUsuario%10000)%1000)/100;
         decenas = ((numeroUsuario%10000)%1000)%100/10;
         unidades = ((numeroUsuario%10000)%1000)%100%10;
-        lector.close();
+        System.out.println("El numero es");
+        System.out.println("dmillar "+dmillar);
+        System.out.println("umillar "+umillar);
+        System.out.println("centenas "+centenas);
+        System.out.println("decenas "+decenas);
+        System.out.println("unidades "+unidades);
+
     }
 }
