@@ -2,12 +2,9 @@ package Ejercicio3;
 
 public class Libro {
 
-
     public String titulo, autor;
 
     public int paginas;
-
-
 
     public Libro () {
         this.titulo = "Sin titulo";
@@ -20,8 +17,6 @@ public class Libro {
         this.titulo=titulo;
         this.autor=autor;
         this.paginas=paginas;
-
-
     }
 }
 
