@@ -7,7 +7,13 @@ public class Libro {
 
     public int paginas;
 
-    public Libro () {}
+
+
+    public Libro () {
+        this.titulo = "Sin titulo";
+        this.autor = "Autor desconocido";
+        this.paginas = 0;
+    }
 
     public Libro (String titulo, String autor, int paginas) {
 
