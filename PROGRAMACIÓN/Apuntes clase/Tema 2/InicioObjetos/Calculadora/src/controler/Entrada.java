@@ -19,5 +19,22 @@ public class Entrada {
         calculadora.sumar(operando1,operando2);
         System.out.println("el resultado de la suma es "+ calculadora.getResultado());
 
+        calculadora.restar(operando1,operando2);
+
+        System.out.println("el resultado de la resta es "+ calculadora.getResultado());
+
+        calculadora.multiplicar(operando1,operando2);
+
+        System.out.println("el resultado de la multiplicacion es "+ calculadora.getResultado());
+
+        calculadora.dividir(operando1 , operando2);
+
+        System.out.println("el resultado de la division es "+  calculadora.getResultado());
+
+        calculadora.modular(operando1 , operando2);
+
+        System.out.println("el modulo es "+calculadora.getResultado());
+
+
     }
 }
