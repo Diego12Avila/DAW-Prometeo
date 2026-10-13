@@ -8,6 +8,19 @@ public class Entrada {
         // jugadores -> nombre, nHabilidad, nVidas
         Jugador jugador1 = new Jugador("Jugador1", "clan1",10,100);
 
+        jugador1.setNombre("Pepe");
+        jugador1.setNombre("Juan");
+        jugador1.setVidas(jugador1.getVidas()+1);
+        System.out.println("el nombre del jugador 1 es "+jugador1.getNombre());
+        System.out.println("las vidas del jugador 1 es "+jugador1.getVidas());
+        System.out.println("el clan del jugador 1 es "+jugador1.getClan());
+        System.out.println("la habilidad del jugador 1 es "+jugador1.getHabilidad());
+        System.out.println("el jugador 1 tiene estrella "+jugador1.isEstrella());
+
+
+/*
+
+
             // nombre=null, clan=clan1, estrella=false, vidas=0, habilidad=0
         Jugador jugador2 = new Jugador("Jugador2", "clan2",10,100);
             // nombre=null, clan=clan2, estrella=false, vidas=0, habilidad=0
@@ -48,7 +61,8 @@ public class Entrada {
         // nombre=null, clan=null, estrella=false, vidas=0, habilidad=0
 
         // System.out.println("Es estrella el jugador 1 es " +jugador1.estrella);
-
+        */
     }
+
 
 }

@@ -5,11 +5,11 @@ public class Jugador {
     // representa el "molde" de lo que sera un jugador real
     // atributos que cualifican -> nombre, nVidas, nHabilidad,
 
-    public String nombre, clan;
+    private String nombre, clan;
 
-    public int vidas, habilidad;
+    private int vidas, habilidad;
 
-    public boolean estrella;
+    private boolean estrella;
 
     // constructor -> la manera en la que se inicia el jugador -> 1(de momento el vacio) a n
         //si creas más de 1 contructor -> SOBRECARGA
@@ -58,4 +58,45 @@ public class Jugador {
         System.out.println("Entro en el hospital, voy a comprobar si estoy muerto");
         return vidas <= 0;
     }
+
+    // metodo getter -> aquel que da acceso a un elemento privado
+
+    public String getNombre(){
+        return this.nombre;
+    }
+    public String getClan(){
+        return this.clan;
+    }
+    public int getVidas (){
+        return this.vidas;
+    }
+    public int getHabilidad (){
+        return this.habilidad;
+    }
+    public boolean isEstrella (){
+        return estrella;
+    }
+
+    public void setNombre (String nombre){
+        this.nombre=nombre;
+    }
+
+    public void setClan(String clan) {
+        this.clan = clan;
+    }
+
+    public void setEstrella(boolean estrella) {
+        this.estrella = estrella;
+    }
+
+    public void setHabilidad(int habilidad) {
+        this.habilidad = habilidad;
+    }
+
+    public void setVidas(int vidas) {
+        this.vidas = vidas;
+    }
 }
+
+
+
