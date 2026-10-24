@@ -1,8 +1,8 @@
-package Ejercicicio12;
+package EjerciciosIF.Ejercicio12;
 
 import java.util.Scanner;
 
-public class Entrada {
+public class Entrada12 {
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         System.out.println("Indica la contraseña a validar");
@@ -25,5 +25,6 @@ public class Entrada {
         }else{
             System.out.println("La pass es invalida");
         }
+        lector.close();
     }
 }
