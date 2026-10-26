@@ -12,16 +12,32 @@ public class Ejercicio10 {
         System.out.println("¿Cuantas repes?");
         int repes = lector.nextInt();
 
-        switch (ej){
-            case 1 :{
-                for (int i = 1; i <=repes; i++){
-                    System.out.println("Repeticion " + i +"compeltada");
-                }break;
-            case 2 :{
-
+        switch (ej) {
+            case 1: {
+                for (int i = 1; i <= repes; i++) {
+                    System.out.println("Repeticion " + i + " compeltada");
+                }
+                System.out.println("¡Ejercico completado! Has hecho " + repes + " felxiones");
+                break;
             }
+            case 2: {
+                for (int i = 1; i <= repes; i++) {
+                    System.out.println("Repeticion " + i + " compeltada");
+                }
+                System.out.println("¡Ejercico completado! Has hecho " + repes + " abdominales");
+                break;
             }
+            case 3: {
+                for (int i = 1; i <= repes; i++) {
+                    System.out.println("Repeticion " + i + " compeltada");
+                }
+                System.out.println("¡Ejercico completado! Has hecho " + repes + " sentadillas");
+                break;
+            }
+            default:
+                System.out.println("Elige una opcion válida");
         }
-
+        lector.close();
     }
 }
+
