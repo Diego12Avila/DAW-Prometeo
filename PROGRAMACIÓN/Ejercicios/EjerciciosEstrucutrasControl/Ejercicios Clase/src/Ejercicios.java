@@ -92,5 +92,59 @@ public class Ejercicios {
         System.out.println("El numero en base 10 es " + sumatorio);
     }
 
+    public void ejercicioNumerica() {
 
+        Scanner lector = new Scanner(System.in);
+        System.out.println("Dime un numero en base decimal");
+        int decimal = lector.nextInt();
+        System.out.println("Dime a que base quieres pasar");
+        int base = lector.nextInt();
+        System.out.printf("Prodecemos a pasar el numero decimal %s a una base %d\n ", decimal, base);
+        int original = decimal;
+
+        int binario = 0;
+        int posicion = 1;
+        int copia = decimal;
+
+        if (base == 2) {
+            while (copia > 0) {
+                int resto = copia % 2;
+                binario = binario + resto * posicion;
+                posicion = posicion * 10;
+                copia = copia / 2;
+            }
+            System.out.println("Base 2 :" + binario);
+        } else if (base == 8) {
+            int octal = 0;
+            posicion = 1;
+            copia = decimal;
+
+            while (copia > 0) {
+                int resto = copia % 8;
+                octal = octal + resto + posicion;
+                posicion = posicion * 10;
+                copia = copia / 8;
+            }
+            System.out.println("Base 8: " + octal);
+        } else if (base == 16) {
+            copia = decimal;
+            String hexadecimal = "";
+            String digitos = "0123456789ABCDEF";
+
+            if (copia == 0) {
+                hexadecimal = "0";
+            }
+
+            while (copia > 0) {
+                int resto = copia % 16;
+                hexadecimal = digitos.charAt(resto) + hexadecimal;
+                copia = copia / 16;
+            }
+
+            System.out.println("Base 16: " + hexadecimal);
+        }  else {
+            System.out.println("introduce una base correcta");
+        }
+        lector.close();
+    }
 }
