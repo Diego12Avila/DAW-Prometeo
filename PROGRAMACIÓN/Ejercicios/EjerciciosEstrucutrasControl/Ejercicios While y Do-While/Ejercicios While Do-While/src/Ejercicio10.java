@@ -34,7 +34,8 @@ public class Ejercicio10 {
                         retirada = lector.nextDouble();
                     }
                     saldo -= retirada;
-                    System.out.println("Retiro exitoso. Has retirado" + retirada + "€");
+                    System.out.println("Retiro exitoso. Has retirado " + retirada + "€");
+                    System.out.println("Tu nuevo saldo es de " + saldo + "€");
                 case 3:
                     double deposito;
                     System.out.println("Cuanto dinero quieres depositar");
