@@ -147,4 +147,6 @@ public class Ejercicios {
         }
         lector.close();
     }
+
+    public void ejercicoSueldos(){}
 }
