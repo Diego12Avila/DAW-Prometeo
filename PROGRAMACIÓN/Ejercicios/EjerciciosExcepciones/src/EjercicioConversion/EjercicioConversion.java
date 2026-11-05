@@ -1,3 +1,5 @@
+package EjercicioConversion;
+
 import java.util.Scanner;
 
 public class EjercicioConversion {

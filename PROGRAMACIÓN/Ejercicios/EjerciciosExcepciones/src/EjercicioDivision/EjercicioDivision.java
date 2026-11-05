@@ -1,3 +1,5 @@
+package EjercicioDivision;
+
 import java.util.Scanner;
 
 public class EjercicioDivision {
