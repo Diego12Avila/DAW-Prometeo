@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class EjercicioBonoloto {
     // generar un carton de bonoloto -> 5 numeros entre el 1 - 100 sin que se puedan repetir
     // TODO -> pedir al usuario 5 numeros, que no sean repetidos
@@ -13,10 +16,24 @@ public class EjercicioBonoloto {
             cartonBonoloto[i] = aleatorio;
         }
 
-        for (int item : cartonBonoloto) {
-            System.out.print(item + " ");
+        System.out.println(Arrays.toString(cartonBonoloto));
+
+        int []cartonUsuario= new int[5];
+        for (int i = 0; i < cartonUsuario.length; i++) {
+            Scanner lector = new Scanner(System.in);
+            int numeroUsuario = lector.nextInt();
+
+            do {
+                System.out.println("Indica el numero en posicion " +(i+1));
+            } while (estaNumero(cartonUsuario, numeroUsuario) || numeroUsuario  <1 || numeroUsuario>10);
+            cartonUsuario[i]=numeroUsuario;
         }
     }
+
+
+
+
+
 
     public static boolean estaNumero(int[] carton, int numero) {
         for (int item : carton) {
