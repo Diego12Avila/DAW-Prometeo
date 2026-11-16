@@ -55,19 +55,17 @@ public class Operaciones {
 
     public void rotarDcha() {
         int aux = numeros[numeros.length - 1];
-        for (int i = 0; i < numeros.length; i++) {
-            int temp = numeros[i];
-            numeros[i] = aux;
-            aux = temp;
+        for (int i = numeros.length - 1; i > 0; i--) {
+            numeros[i] = numeros[i - 1];
         }
         numeros[0] = aux;
     }
 
     public void invertir() {
         for (int i = 0; i < numeros.length / 2; i++) {
-            int item = numeros[i];
-            numeros[i] = numeros[numeros.length - 1 - i];
-            numeros[numeros.length - 1 - i] = item;
+            int aux = numeros[numeros.length - i - 1];
+            numeros[numeros.length - 1 - i] = numeros[i];
+            numeros[i] = aux;
         }
     }
 
